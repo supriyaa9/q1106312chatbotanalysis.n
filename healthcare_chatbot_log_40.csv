@@ -1,0 +1,56 @@
+Timestamp,Session_ID,User_Input,Intent_Recognized,Actual_Intent,NLU_Confidence,Response_Time (s),Fallback_Triggered,Fallback_Type,Completion_Rate
+1/24/2026 14:35,S101,Hello,greet,greet,0.99,0.12,FALSE,N/A,N/A
+1/24/2026 14:35,S101,I want to book an appointment,appointment_query,appointment_query,0.95,0.21,FALSE,N/A,N/A
+1/24/2026 14:35,S101,with a cardiologist please,appointment_query,appointment_query,0.92,0.18,FALSE,N/A,100%
+1/24/2026 14:35,S102,what is your name,bot_challenge,bot_challenge,0.98,0.15,FALSE,N/A,N/A
+1/24/2026 14:35,S102,bye,goodbye,goodbye,0.99,0.11,FALSE,N/A,100%
+1/24/2026 14:35,S103,I have a slight fever and a headache,symptom_routine,symptom_routine,0.89,0.22,FALSE,N/A,N/A
+1/24/2026 14:35,S104,I feel like my chest is tight and I can't breathe,symptom_critical,symptom_critical,0.52,0.81,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:35,S104,"yes, I accept the handover",affirm,affirm,0.99,0.19,FALSE,N/A,100%
+1/24/2026 14:36,S105,Can you tell me about the services,general_info,general_info,0.93,0.17,FALSE,N/A,N/A
+1/24/2026 14:36,S106,dflkjsdfl,None,out_of_scope,0.07,0.45,TRUE,Routine_Fallback,N/A
+1/24/2026 14:36,S107,I want to change the date,change_appointment,change_appointment,0.48,0.6,TRUE,Ambiguous_Routine_Fallback,N/A
+1/24/2026 14:36,S107,thanks,goodbye,goodbye,0.99,0.1,FALSE,N/A,100%
+1/24/2026 14:36,S108,what are your hours,check_hours,check_hours,0.9,0.15,FALSE,N/A,100%
+1/24/2026 14:36,S109,I need to see a doctor for my child,appointment_query,appointment_query,0.88,0.2,FALSE,N/A,N/A
+1/24/2026 14:37,S109,not available tomorrow,deny,deny,0.96,0.13,FALSE,N/A,N/A
+1/24/2026 14:37,S110,I feel very dizzy and I can't stand,symptom_critical,symptom_critical,0.59,0.92,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:37,S110,where is the emergency room,emergency_request,emergency_request,0.85,0.25,FALSE,N/A,100%
+1/24/2026 14:37,S111,I have a small cut,symptom_routine,symptom_routine,0.91,0.17,FALSE,N/A,N/A
+1/24/2026 14:37,S112,book for next week,check_availability,check_availability,0.94,0.19,FALSE,N/A,N/A
+1/24/2026 14:37,S112,no,deny,deny,0.97,0.12,FALSE,N/A,N/A
+1/24/2026 14:38,S113,I think I'm having a severe reaction,symptom_critical,symptom_critical,0.42,0.7,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:38,S113,no thanks,deny,deny,0.95,0.13,FALSE,N/A,N/A
+1/24/2026 14:38,S114,I need a note for school,general_info,general_info,0.86,0.2,FALSE,N/A,100%
+1/24/2026 14:38,S115,I can't feel my fingers,symptom_critical,symptom_critical,0.55,0.85,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:38,S115,connect me please,affirm,affirm,0.99,0.15,FALSE,N/A,100%
+1/24/2026 14:38,S116,I need to cancel my appointment,cancel_appointment,cancel_appointment,0.92,0.18,FALSE,N/A,N/A
+1/24/2026 14:39,S117,I don't know what to do,None,out_of_scope,0.11,0.5,TRUE,Routine_Fallback,N/A
+1/24/2026 14:39,S118,what is the hospital policy for visitors,general_info,general_info,0.9,0.17,FALSE,N/A,100%
+1/24/2026 14:39,S119,I have a mild sore throat,symptom_routine,symptom_routine,0.95,0.15,FALSE,N/A,N/A
+1/24/2026 14:39,S120,book,appointment_query,appointment_query,0.85,0.22,FALSE,N/A,N/A
+1/24/2026 14:39,S120,I will call later,goodbye,goodbye,0.99,0.11,FALSE,N/A,N/A
+1/24/2026 14:39,S121,I have a quick question about blood work,general_info,general_info,0.88,0.19,FALSE,N/A,100%
+1/24/2026 14:40,S122,I'm looking for the lab,general_info,general_info,0.87,0.18,FALSE,N/A,100%
+1/24/2026 14:40,S123,I feel weak and suddenly very ill,symptom_critical,symptom_critical,0.45,0.78,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:40,S123,affirm,affirm,affirm,0.98,0.16,FALSE,N/A,100%
+1/24/2026 14:40,S124,is that all you can do,bot_challenge,bot_challenge,0.97,0.14,FALSE,N/A,N/A
+1/24/2026 14:40,S125,I need to change the doctor,change_appointment,change_appointment,0.89,0.2,FALSE,N/A,N/A
+1/24/2026 14:40,S126,I'm not sure if I should come in,symptom_routine,symptom_routine,0.41,0.65,TRUE,Ambiguous_Routine_Fallback,N/A
+1/24/2026 14:41,S127,my head hurts,symptom_routine,symptom_routine,0.87,0.18,FALSE,N/A,100%
+1/24/2026 14:42,S128,I need to know the price for a visit,general_info,general_info,0.85,0.2,FALSE,N/A,N/A
+1/24/2026 14:42,S128,"okay, I will call billing",goodbye,goodbye,0.99,0.11,FALSE,N/A,100%
+1/24/2026 14:42,S129,I think I'm running out of my medication,general_info,general_info,0.51,0.68,TRUE,Ambiguous_Routine_Fallback,N/A
+1/24/2026 14:42,S130,Is there a nurse on duty,general_info,general_info,0.9,0.17,FALSE,N/A,N/A
+1/24/2026 14:43,S131,my vision is blurry and I feel faint,symptom_critical,symptom_critical,0.57,0.88,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:43,S131,"yes, connect me now",affirm,affirm,0.99,0.15,FALSE,N/A,100%
+1/24/2026 14:43,S132,where is the nearest parking,general_info,general_info,0.89,0.16,FALSE,N/A,100%
+1/24/2026 14:43,S133,I need to talk to someone fast,emergency_request,emergency_request,0.95,0.22,FALSE,N/A,N/A
+1/24/2026 14:44,S134,how do i get a blood test,general_info,general_info,0.88,0.19,FALSE,N/A,N/A
+1/24/2026 14:44,S135,what about tomorrow,check_availability,check_availability,0.92,0.18,FALSE,N/A,N/A
+1/24/2026 14:44,S136,gfjhtr,None,out_of_scope,0.09,0.52,TRUE,Routine_Fallback,N/A
+1/24/2026 14:44,S137,I have a rash that is spreading,symptom_critical,symptom_critical,0.49,0.75,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:45,S137,bye,goodbye,goodbye,0.99,0.1,FALSE,N/A,100%
+1/24/2026 14:46,S138,I need to see a doctor today,appointment_query,appointment_query,0.91,0.2,FALSE,N/A,N/A
+1/24/2026 14:46,S139,I am having difficulty swallowing and my throat is very swollen,symptom_critical,symptom_critical,0.53,0.85,TRUE,Safety_Critical_Handover,N/A
+1/24/2026 14:46,S139,I'm busy,goodbye,goodbye,0.99,0.11,FALSE,N/A,100%
